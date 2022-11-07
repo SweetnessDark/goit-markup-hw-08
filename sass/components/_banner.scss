@@ -1,0 +1,65 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 118px 0;
+    background-image: var(--bg-gradient),
+    url('../images/team-work-mob.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: var(--bg-gradient),
+            url('../images/team-work-mob-2x.jpg');
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: var(--bg-gradient),
+        url('../images/team-work-tab.png');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: var(--bg-gradient),
+            url('../images/team-work-tab-2x.jpg');
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0;
+        background-image: var(--bg-gradient),
+        url('../images/team-work.png');
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: var(--bg-gradient),
+            url('../images/team-work-2x.jpg');
+        }
+    }
+    
+    .container {
+      width: auto;
+    }
+
+    .heading__banner {
+        @include font(900, 26px, 42px, 0.06em);
+        text-transform: uppercase;
+        max-width: 360px;
+        margin-bottom: 30px;
+        color: var(--color-white);
+
+        @media screen and (min-width: 768px) {
+            width: 720px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            @include font(900, 44px, 60px, 0.06em);
+            max-width: 690px;
+        }
+    }
+}
