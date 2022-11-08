@@ -5,7 +5,7 @@
     text-align: center;
     padding: 118px 0;
     background-image: var(--bg-gradient),
-    url('../images/team-work-mob.png');
+    url('../images/team-work-mob.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,7 +19,7 @@
 
     @media screen and (min-width: 768px) {
         background-image: var(--bg-gradient),
-        url('../images/team-work-tab.png');
+        url('../images/team-work-tab.jpg');
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -32,7 +32,7 @@
     @media screen and (min-width: 1200px) {
         padding: 200px 0;
         background-image: var(--bg-gradient),
-        url('../images/team-work.png');
+        url('../images/team-work.jpg');
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
